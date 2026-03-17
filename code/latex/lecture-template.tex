@@ -1,0 +1,135 @@
+\documentclass[11pt,aspectratio=43,t]{beamer}
+
+% -------------------------------------------------
+% Theme and appearance
+% -------------------------------------------------
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{blocks}[rounded]
+% Keep slides clean
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+% Wider margins for readability
+\setbeamersize{text margin left=1.4cm, text margin right=1.4cm}
+
+% Title hierarchy
+\setbeamerfont{title}{series=\bfseries}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+
+% Bullet style and spacing (discourages overfull slides)
+\setbeamertemplate{itemize items}[circle]
+\setlength{\itemsep}{0.7em}
+\setlength{\parskip}{0.3em}
+
+% Do nothing automatically at new sections (we use explicit divider frames)
+\AtBeginSection{}
+
+% -------------------------------------------------
+% Maths and graphics
+% -------------------------------------------------
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{
+  {figures/}
+%  {figures/chap1/}
+}
+\usepackage{makecell}
+\usepackage{booktabs}
+% Optional: set your default figure path(s) here if you like
+% \graphicspath{{figures/}{figures/lectures/}}
+
+
+
+% -------------------------------------------------
+% Title information (override per lecture file)
+% -------------------------------------------------
+\title[Geometry Without Manifolds]{What Becomes of Geometry\\When the Manifold Is Gone?}
+%\subtitle{Combinatorial Mesh Calculus}
+\author{\href{https://scholar.google.co.uk/citations?user=3nWJe5wAAAAJ&hl=en}{\textbf{Andrey Jivkov}}}
+\institute{Department of Mechanical and Aerospace Engineering\\
+The University of Manchester}
+\date{\today}
+
+
+% -------------------------------------------------
+% Custom slide types / helpers
+% -------------------------------------------------
+
+% Title slide helper (so lecture files stay short and consistent)
+\newcommand{\maketitleslide}{
+\begin{frame}
+  \titlepage
+\end{frame}
+}
+
+% Overview slide helper (accepts an itemize body)
+\newcommand{\overviewframe}[1]{
+\begin{frame}{What this lecture is about}
+\begin{itemize}
+  #1
+\end{itemize}
+\end{frame}
+}
+
+% Section divider slide
+\newcommand{\sectionframe}[1]{
+\begin{frame}[plain]
+  \vfill
+  \centering
+  {\Large\bfseries #1}
+  \par\vspace{0.5em}
+  \rule{0.4\textwidth}{0.4pt}
+  \vfill
+\end{frame}
+}
+
+% Figure placeholder slide
+\newcommand{\figureframe}[1]{
+\begin{frame}{}
+  \centering
+  \vspace{1.0cm}
+  \textit{[Figure placeholder: #1]}
+\end{frame}
+}
+
+% Figure + text frame (left text, right figure placeholder)
+% #1 = frame title
+% #2 = left content (typically itemize, keyidea, short text)
+% #3 = figure description
+\newcommand{\figtextframe}[3]{
+\begin{frame}{#1}
+\begin{columns}[T]
+  \begin{column}{0.52\textwidth}
+    #2
+  \end{column}
+  \begin{column}{0.46\textwidth}
+    \centering
+    \vspace{0.2em}
+    \textit{[Figure: #3]}
+  \end{column}
+\end{columns}
+\end{frame}
+}
+
+% Key idea emphasis (keep it short; do not paste full definitions)
+\newenvironment{keyidea}{
+\begin{itemize}
+  \item[\textbf{Key idea}]
+}{
+\end{itemize}
+}
+
+% Summary slide helper
+\newcommand{\takeawaysframe}[1]{
+\begin{frame}{Key takeaways}
+\begin{itemize}
+  #1
+\end{itemize}
+\end{frame}
+}
+
+% -------------------------------------------------
+% Document begins in the lecture file that inputs this template
+% -------------------------------------------------

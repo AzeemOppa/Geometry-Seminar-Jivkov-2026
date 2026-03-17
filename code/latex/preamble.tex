@@ -1,0 +1,85 @@
+\RequirePackage{pdfmanagement-testphase}
+
+\DocumentMetadata{
+  pdfstandard=ua-2,
+  lang=en-GB,
+  tagging=on
+}
+
+\documentclass[11pt,a4paper,openany]{book}
+
+% -------------------------------------------------
+% Core packages
+% -------------------------------------------------
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+
+\usepackage{graphicx}
+\graphicspath{
+  {figures/}
+  {figures/chap1/}
+  {figures/chap2/}
+  {figures/chap3/}
+  {figures/chap4/}
+  {figures/chap5/}
+  {figures/chap6/}
+  {figures/chap7/}
+  {figures/chap8/}
+  {figures/tutorials/}
+  {figures/assignments/}
+}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\usepackage{geometry}
+\geometry{a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm}
+
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{eso-pic}
+\usepackage{comment}
+
+% Tagged PDF fine-tuning
+\usepackage{tagpdf}
+\tagpdfsetup{interwordspace=true, math/mathml/luamml/load=false}
+\usepackage{makecell}
+% -------------------------------------------------
+% Theorem-like environments (for all chapters)
+% -------------------------------------------------
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{question}{Example question}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem{tutorial}{Question}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfauthor={Andrey Jivkov},
+  pdftitle={Modern Thermodynamics: Course Handbook}
+}
+% Common shorthand
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\del}{\partial}   % Defines \del as the partial derivative/boundary symbol
+\newcommand{\dd}{\mathrm{d}}  % Defines \dd as the exterior derivative d
+
+\usepackage{tikz}
+\usepackage{xcolor}
+
+
+
