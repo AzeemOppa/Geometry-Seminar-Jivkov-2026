@@ -1,2 +1,12 @@
-# Geometry-Seminar-Jivkov-2026
-Material and presentation for Prof. Andrey Jivkov's 2026 seminar: "What becomes of Geometry when the Manifold is gone?". Exploring combinatorial geometric frameworks, cell complexes, and cochain representations for discrete structural changes in mechanics. Includes lecture recording link and TikZ-based multiscale representations.
+Lectures available at [https://youtube.com/@kipi.berbatov](https://youtu.be/IbL4gSAlgcg).
+
+Lectured by Prof. Andrey P Jivkov
+
+Typeset by Muhammad Azeem
+
+Organised by at Manchester Geometry Seminar by Department of Mathematics, University of Manchester, Oxford Rd
+Manchester
+M13 9PL
+UK.
+
+For further contact regarding the Manchester Geometry Seminar: Theodore Voronov (theodore.voronov@manchester.ac.uk).
