@@ -1,4 +1,4 @@
-Lectures available at [https://youtube.com/@kipi.berbatov](https://youtu.be/IbL4gSAlgcg).
+Lecture available at [https://youtube.com/@kipi.berbatov](https://youtu.be/IbL4gSAlgcg).
 
 Lectured by Prof. Andrey P Jivkov
 
